@@ -16,13 +16,13 @@ ActiveRecord::Schema.define(:version => 20120313231045) do
   create_table "children", :force => true do |t|
     t.integer  "parent_id"
     t.datetime "example_datetime"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "parents", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
